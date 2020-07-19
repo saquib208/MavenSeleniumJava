@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+  
+<suite name="SeleniumFramework" verbose="1" >
+
+
+	<listeners>
+		<listener class-name="com.automation.utilities.ExtentReport"/>
+	</listeners>
+
+
+
+  <test name="Automation" >
+  	<parameter name="browsers" value="chrome" />
+    <classes>
+       <class name="com.automation.testcase.TC_LoginDDT_002" />
+    </classes>
+  </test>
+ 
+</suite>
